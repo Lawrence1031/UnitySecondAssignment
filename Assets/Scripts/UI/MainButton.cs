@@ -9,7 +9,7 @@ public class MainButton : MonoBehaviour
     public GameObject StatusBoard;
     public GameObject InventoryButton;
     public GameObject InventoryBoard;
-
+    public GameObject CheckWindow;
     public GameObject backButton;
 
     // 시작 시에 StatusBoard, InventoryBoard, backButton false로
@@ -22,6 +22,7 @@ public class MainButton : MonoBehaviour
     {
         StatusBoard.SetActive(false);
         backButton.SetActive(false);
+        CheckWindow.SetActive(false);
     }
 
     public void ClickStatus()
