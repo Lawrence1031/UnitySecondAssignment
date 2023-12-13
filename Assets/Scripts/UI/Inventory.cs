@@ -38,14 +38,6 @@ public class Inventory : MonoBehaviour
         backButton.SetActive(true);
     }
 
-    public void ClickBack()
-    {
-        if (InventoryBoard.activeSelf)
-            InventoryBoard.SetActive(false);
-
-        backButton.SetActive(false);
-    }
-
     public void InvenNext()
     {
         // 지금은 if 문의 반복이지만,
