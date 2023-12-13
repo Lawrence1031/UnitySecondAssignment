@@ -625,8 +625,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1229199813}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 1408981453}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: InvenNext
         m_Mode: 1
         m_Arguments:
@@ -3855,8 +3855,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1229199813}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 1408981453}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: InvenPrev
         m_Mode: 1
         m_Arguments:
@@ -7527,16 +7527,7 @@ MonoBehaviour:
   StatusBoard: {fileID: 1294419792}
   InventoryButton: {fileID: 1180266935}
   InventoryBoard: {fileID: 1203962427}
-  InventoryPrevButton: {fileID: 594076290}
-  InventoryNextButton: {fileID: 101257927}
-  InventorySlot1: {fileID: 846736142}
-  InventorySlot2: {fileID: 1279003274}
-  InventorySlot3: {fileID: 925366332}
-  InventorySlot4: {fileID: 208672976}
-  InventorySlot5: {fileID: 482070834}
   backButton: {fileID: 1939590317}
-  InventoryPage: {fileID: 895514397}
-  CurPage: 1
 --- !u!4 &1229199814
 Transform:
   m_ObjectHideFlags: 0
@@ -8402,6 +8393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1408981452}
+  - component: {fileID: 1408981453}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -8426,6 +8418,29 @@ Transform:
   m_Father: {fileID: 2127267728}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408981453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408981451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad1dd16d3775734b9bb8cd99f2de1ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryBoard: {fileID: 1203962427}
+  InventoryPrevButton: {fileID: 594076290}
+  InventoryNextButton: {fileID: 101257927}
+  InventorySlot1: {fileID: 846736142}
+  InventorySlot2: {fileID: 1279003274}
+  InventorySlot3: {fileID: 925366332}
+  InventorySlot4: {fileID: 208672976}
+  InventorySlot5: {fileID: 482070834}
+  backButton: {fileID: 1939590317}
+  InventoryPage: {fileID: 895514397}
+  CurPage: 1
 --- !u!1001 &1410785856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12068,8 +12083,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1229199813}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 1408981453}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: ClickInventory
         m_Mode: 1
         m_Arguments:
