@@ -8,6 +8,13 @@ public class ButtonManager : MonoBehaviour
     public GameObject StatusBoard;
     public GameObject InventoryButton;
     public GameObject InventoryBoard;
+    public GameObject InventoryPrevButton;
+    public GameObject InventoryNextButton;
+    public GameObject InventorySlot1;
+    public GameObject InventorySlot2;
+    public GameObject InventorySlot3;
+    public GameObject InventorySlot4;
+    public GameObject InventorySlot5;
     public GameObject backButton;
 
     // 시작 시에 StatusBoard, InventoryBoard, backButton false로
@@ -21,6 +28,11 @@ public class ButtonManager : MonoBehaviour
         StatusBoard.SetActive(false);
         InventoryBoard.SetActive(false);
         backButton.SetActive(false);
+        InventorySlot1.SetActive(false);
+        InventorySlot2.SetActive(false);
+        InventorySlot3.SetActive(false);
+        InventorySlot4.SetActive(false);
+        InventorySlot5.SetActive(false);
     }
 
     public void ClickStatus()
@@ -44,6 +56,5 @@ public class ButtonManager : MonoBehaviour
             InventoryBoard.SetActive(false);
 
         backButton.SetActive(false);
-
     }
 }
