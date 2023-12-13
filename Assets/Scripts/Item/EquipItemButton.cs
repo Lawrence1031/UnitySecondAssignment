@@ -49,15 +49,7 @@ public class EquipItemButton : MonoBehaviour
 
     public void PressYesButton()
     {
-        CheckWindow = GameObject.Find("CheckWindow").gameObject;
         EquipCheck(!Equip.gameObject.activeSelf);
-        CheckWindow.SetActive(false);
-    }
-
-    public void PressNoButton()
-    {
-        CheckWindow = GameObject.Find("CheckWindow").gameObject;
-        CheckWindow.SetActive(false);
     }
 
     private void EquipCheck(bool isActive)
