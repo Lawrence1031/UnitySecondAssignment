@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ButtonManager : MonoBehaviour
+public class MainButton : MonoBehaviour
 {
     public GameObject StatusButton;
     public GameObject StatusBoard;

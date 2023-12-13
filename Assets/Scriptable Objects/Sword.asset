@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   itemName: sword of fire
+  description: FireSlash
+  type: 0
   itemIcon: {fileID: 0}
   price: 3000
+  equipable: 1
+  consumables: 

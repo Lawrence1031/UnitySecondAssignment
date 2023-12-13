@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915d6f186f5a1764083f95a6ac51545b, type: 3}
   m_Name: Wand
   m_EditorClassIdentifier: 
-  itemName: wand of water
+  itemName: wand of lightning
+  description: Thunder
+  type: 0
   itemIcon: {fileID: 0}
   price: 12000
+  equipable: 1
+  consumables: 

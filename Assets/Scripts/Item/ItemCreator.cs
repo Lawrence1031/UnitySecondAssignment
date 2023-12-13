@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ItemType { BOW, SWORD, WAND }
 public class ItemCreator : MonoBehaviour
 {
     List<Item> itemInventory = new List<Item>();
@@ -25,10 +24,6 @@ public class ItemCreator : MonoBehaviour
 
     void Start()
     {
-        ItemCreate(ItemType.BOW);
-        ItemCreate(ItemType.SWORD);
-        ItemCreate(ItemType.WAND);
-
         ShowInventoryItems();
     }
 

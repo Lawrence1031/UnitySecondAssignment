@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Bow
   m_EditorClassIdentifier: 
   itemName: bow of wind
+  description: windforce
+  type: 0
   itemIcon: {fileID: 0}
   price: 12000
+  equipable: 1
+  consumables: 
