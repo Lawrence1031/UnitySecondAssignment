@@ -515,7 +515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC544\uC774\uD15C \uBA85"
+  m_text: Bow
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4247d308de55c3c4aa4a2696c0974358, type: 2}
   m_sharedMaterial: {fileID: 3100126477485582035, guid: 4247d308de55c3c4aa4a2696c0974358, type: 2}
@@ -896,8 +896,6 @@ MonoBehaviour:
   CheckItemDescription: {fileID: 0}
   CheckItemImage: {fileID: 0}
   ConfirmText: {fileID: 0}
-  yesButton: {fileID: 0}
-  NoButton: {fileID: 0}
 --- !u!1 &7689192373044598718
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC544\uC774\uD15C \uC0C1\uC138 \uC124\uBA85"
+  m_text: windforce
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4247d308de55c3c4aa4a2696c0974358, type: 2}
   m_sharedMaterial: {fileID: 3100126477485582035, guid: 4247d308de55c3c4aa4a2696c0974358, type: 2}

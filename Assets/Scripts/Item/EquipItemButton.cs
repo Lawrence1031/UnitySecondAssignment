@@ -20,8 +20,6 @@ public class EquipItemButton : MonoBehaviour
     public TextMeshProUGUI CheckItemDescription;
     public Image CheckItemImage;
     public TextMeshProUGUI ConfirmText;
-    public GameObject yesButton;
-    public GameObject NoButton;
 
     private void Start()
     {
@@ -51,13 +49,14 @@ public class EquipItemButton : MonoBehaviour
 
     public void PressYesButton()
     {
-        CheckWindow.SetActive(false);
-
+        CheckWindow = GameObject.Find("CheckWindow").gameObject;
         EquipCheck(!Equip.gameObject.activeSelf);
+        CheckWindow.SetActive(false);
     }
 
     public void PressNoButton()
     {
+        CheckWindow = GameObject.Find("CheckWindow").gameObject;
         CheckWindow.SetActive(false);
     }
 
