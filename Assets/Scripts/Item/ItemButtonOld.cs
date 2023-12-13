@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemButton : MonoBehaviour
+public class ItemButtonOld : MonoBehaviour
 {
     public GameObject Equip;
 

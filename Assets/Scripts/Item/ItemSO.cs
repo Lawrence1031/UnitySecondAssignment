@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum ItemType
@@ -10,7 +11,7 @@ public enum ItemType
 
 public enum ConsumableType
 {
-    Health,
+    HP,
     Exp
 }
 
@@ -36,5 +37,19 @@ public class ItemSO : ScriptableObject
     public bool equipable;
 
     [Header("Consumable")]
-    public ConsumableType[] consumables;
+    public ItemSOConsumable[] consumables;
+
+
+
+    public void ItemInfo()
+    {
+        Debug.Log("아이템 이름 : " + itemName);
+        Debug.Log("아이템 설명 : " + description);
+        Debug.Log("아이템 종류 : " + type);
+        Debug.Log("아이템 가격 : " + price);
+        Debug.Log("착용 가능여부 : " + equipable);
+        Debug.Log("사용 가능여부 : " + consumables);
+        Debug.Log("사용 시 획득 HP : " + ConsumableType.HP);
+        Debug.Log("사용 시 획득 EXP : " + ConsumableType.Exp);
+    }
 }
