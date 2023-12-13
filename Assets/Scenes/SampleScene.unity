@@ -201,6 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7762177}
   - component: {fileID: 7762178}
+  - component: {fileID: 7762179}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -246,6 +247,21 @@ MonoBehaviour:
   PlayerDef: {fileID: 825131741}
   PlayerHP: {fileID: 248622046}
   PlayerCri: {fileID: 448179674}
+  expBar: {fileID: 7762179}
+--- !u!114 &7762179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7762176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dedff638ccdd1244b86c23e7fe8db45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollbar: {fileID: 426992755}
+  curExpText: {fileID: 912755692}
 --- !u!1001 &17497931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1896,7 +1912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 830, y: 450}
+  m_AnchoredPosition: {x: 780, y: 450}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309025820
@@ -1919,7 +1935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20,000
+  m_text: 5000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4247d308de55c3c4aa4a2696c0974358, type: 2}
   m_sharedMaterial: {fileID: 3100126477485582035, guid: 4247d308de55c3c4aa4a2696c0974358, type: 2}
@@ -1953,7 +1969,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3032,11 +3048,23 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1145050141}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.2
+  m_Size: 0.5
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7762179}
+        m_TargetAssemblyTypeName: ExpBar, Assembly-CSharp
+        m_MethodName: UpdateExpBar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &426992756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5499,7 +5527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20
+  m_text: 50
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

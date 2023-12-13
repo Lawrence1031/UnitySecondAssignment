@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCreator : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class PlayerCreator : MonoBehaviour
     public TextMeshProUGUI PlayerDef;
     public TextMeshProUGUI PlayerHP;
     public TextMeshProUGUI PlayerCri;
+
+    public ExpBar expBar;
 
     public void MakeNewPlayer(Player player)
     {
@@ -40,5 +43,7 @@ public class PlayerCreator : MonoBehaviour
         PlayerDef.text = player.Def.ToString();
         PlayerHP.text = player.HP.ToString();
         PlayerCri.text = player.Cri.ToString();
+
+        expBar.UpdateExpBar();
     }
 }
