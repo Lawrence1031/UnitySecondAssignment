@@ -431,8 +431,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ItemButton, Assembly-CSharp
+      - m_Target: {fileID: 5598714082393455620}
+        m_TargetAssemblyTypeName: EquipItemButton, Assembly-CSharp
         m_MethodName: PressItem
         m_Mode: 1
         m_Arguments:
@@ -530,8 +530,9 @@ GameObject:
   - component: {fileID: 4498846179177842593}
   - component: {fileID: 1845595069217624470}
   - component: {fileID: 2529555683513977088}
+  - component: {fileID: 5598714082393455620}
   m_Layer: 5
-  m_Name: ItemSlot
+  m_Name: EquipItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -597,6 +598,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5598714082393455620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7534310204628631799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403c74fa19983e241ac23d3d982461f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Equip: {fileID: 1841025339612124771}
 --- !u!1 &8787964234196054624
 GameObject:
   m_ObjectHideFlags: 0
