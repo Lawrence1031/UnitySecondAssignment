@@ -35,6 +35,7 @@ public class ItemSO : ScriptableObject
 
     [Header("Equipable")]
     public bool equipable;
+    public bool isEquiped;
     public int Atk;
     public int Def;
     public int HP;

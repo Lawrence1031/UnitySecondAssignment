@@ -389,7 +389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &514065371283153849
 RectTransform:
   m_ObjectHideFlags: 0
@@ -887,15 +887,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403c74fa19983e241ac23d3d982461f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Equip: {fileID: 1841025339612124771}
   ItemName: {fileID: 4904031969897430336}
   ItemDescription: {fileID: 3854982149335668430}
-  ItemImage: {fileID: 3379477864962899491}
   CheckWindow: {fileID: 0}
   CheckItemName: {fileID: 0}
   CheckItemDescription: {fileID: 0}
   CheckItemImage: {fileID: 0}
   ConfirmText: {fileID: 0}
+  inputData: {fileID: 0}
+  itemButton: {fileID: 0}
+  itemIcon: {fileID: 0}
+  Equip: {fileID: 1841025339612124771}
 --- !u!1 &7689192373044598718
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,16 +4,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EquipItemButton : MonoBehaviour
+public class ItemButton: MonoBehaviour
 {
     //아이템 클릭 시에 장비인지 소모품인지 확인하고
     //장비인 경우에는 장착할 수 있게,
     //소모품인 경우에는 소모 시에 사라지게 만들기
-
-    public GameObject Equip;
+    
     public TextMeshProUGUI ItemName;
     public TextMeshProUGUI ItemDescription;
-    public Image ItemImage;
 
     public GameObject CheckWindow;
     public TextMeshProUGUI CheckItemName;
@@ -21,11 +19,32 @@ public class EquipItemButton : MonoBehaviour
     public Image CheckItemImage;
     public TextMeshProUGUI ConfirmText;
 
-    private void Start()
+    [HideInInspector] public ItemSO inputData;
+
+    public ItemButton itemButton;
+    public Image itemIcon;
+    public GameObject Equip;
+
+    public void Init(ItemSO data)
     {
-        Equip.SetActive(false);
+        inputData = data;
+        itemIcon.sprite = data.itemIcon;
+        itemIcon.enabled = true;
+
+        CheckEquip();
     }
 
+    public void CheckEquip()
+    {
+        if (inputData.isEquiped)
+        {
+            Equip.SetActive(true);
+        }
+        else
+        {
+            Equip.SetActive(false);
+        }
+    }
 
     public void PressItem()
     {
@@ -35,28 +54,22 @@ public class EquipItemButton : MonoBehaviour
         CheckWindow.SetActive(true);
         CheckItemName.text = ItemName.text;
         CheckItemDescription.text = ItemDescription.text;
-        CheckItemImage = ItemImage.GetComponent<Image>();
+        //CheckItemImage = ItemImage.GetComponent<Image>();
 
-        if (!Equip.gameObject.activeSelf)
-        {
-            ConfirmText.text = "장착하시겠습니까?";
-        }
-        else
+        if (inputData.isEquiped)
         {
             ConfirmText.text = "해제하시겠습니까?";
         }
+        else
+        {
+            ConfirmText.text = "장착하시겠습니까?";
+        }
+
+        CheckEquip();
     }
 
     public void PressYesButton()
     {
-        EquipCheck(!Equip.gameObject.activeSelf);
-    }
-
-    private void EquipCheck(bool isActive)
-    {
-        if (Equip != null)
-        {
-            Equip.gameObject.SetActive(isActive);
-        }
+        CheckEquip();
     }
 }
