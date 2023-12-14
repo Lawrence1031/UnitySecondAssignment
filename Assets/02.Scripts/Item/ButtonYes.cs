@@ -6,19 +6,18 @@ using UnityEngine;
 public class ButtonYes : MonoBehaviour
 {
     public GameObject Equip;
-    public GameObject CheckWindow;
 
-    public void PressYesButton()
+    public void PressYesButton(ItemSlot slot)
     {
-        CheckWindow.SetActive(false);
-
-        EquipCheck(!Equip.gameObject.activeSelf);
-    }
-    private void EquipCheck(bool isActive)
-    {
-        if (Equip != null)
+        if (slot.inputData.isEquiped)
         {
-            Equip.gameObject.SetActive(isActive);
+            slot.inputData.isEquiped = false;
         }
+        else
+        {
+            slot.inputData.isEquiped = true;
+        }
+
+        slot.CheckEquip();
     }
 }

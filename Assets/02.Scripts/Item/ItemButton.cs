@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,53 +17,43 @@ public class ItemButton: MonoBehaviour
     public Image CheckItemImage;
     public TextMeshProUGUI ConfirmText;
 
-    [HideInInspector] public ItemSO inputData;
-
+    public ItemSlot itemslot;
     public ItemButton itemButton;
     public Image itemIcon;
     public GameObject Equip;
 
-    public void Init(ItemSO data)
-    {
-        inputData = data;
-        itemIcon.sprite = data.itemIcon;
+    public Button YesButton;
 
-        CheckEquip();
-    }
-
-    public void PressItem()
+    public void PressItem(ItemSlot slot)
     {
         // 만약 EquipCheck가 켜져있으면 꺼주고 꺼져있으면 켜주게
         // 이후에 해당 Equip 아이템의 능력치를 Status에 추가되고 빠지게
 
+        CheckItemName.text = slot.inputData.itemName;
+        CheckItemDescription.text = slot.inputData.description;
+        CheckItemImage.sprite = slot.inputData.itemIcon;
+
         CheckWindow.SetActive(true);
 
-        if (inputData.isEquiped)
+        if (slot.inputData.isEquiped)
         {
             ConfirmText.text = "해제하시겠습니까?";
+            YesButton.onClick.RemoveAllListeners();
+            YesButton.onClick.AddListener(() =>
+            {
+                slot.inputData.isEquiped = false;
+                slot.CheckEquip();
+            });
         }
         else
         {
             ConfirmText.text = "장착하시겠습니까?";
-        }
-
-        CheckEquip();
-    }
-
-    public void PressYesButton()
-    {
-        CheckEquip();
-    }
-
-    public void CheckEquip()
-    {
-        if (inputData.isEquiped)
-        {
-            Equip.SetActive(true);
-        }
-        else
-        {
-            Equip.SetActive(false);
-        }
+            YesButton.onClick.RemoveAllListeners();
+            YesButton.onClick.AddListener(() =>
+            {
+                slot.inputData.isEquiped = true;
+                slot.CheckEquip();
+            });
+         }
     }
 }

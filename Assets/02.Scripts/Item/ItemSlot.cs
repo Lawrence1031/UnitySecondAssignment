@@ -33,6 +33,6 @@ public class ItemSlot : MonoBehaviour
 
     public void PopUp()
     {
-        itemButton.PressItem();
+        itemButton.PressItem(this);
     }
 }
