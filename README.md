@@ -105,21 +105,31 @@ https://assetstore.unity.com/packages/2d/pixelwitchery-239673
 
 ##### 메인화면 구성
 
+<details>
+
 메인화면은 예시로 들어준 화면과 비슷하게 디자인하여 만들었다.
 이 과정에서 원래는 에셋으로 받았던 이미지를 사용하였으나,
 이후에 실제로 로스트아크에서 플레이 중인 캐릭터의 이미지와 능력치를 일부 가져와서 사용하였다.
 
 ![image](https://github.com/Lawrence1031/UnitySecondAssignment/assets/144416099/8fd7ef2e-79e5-4758-a7fa-a65cfc0f4c8a)
 
+</details>
 
 ##### Status 보기
+
+<details>
+  
 
 메인화면에서 '스테이터스' 버튼을 누르면 스테이터스 창이 보이며, 뒤로가기 버튼이 활성화 된다.
 
 ![image](https://github.com/Lawrence1031/UnitySecondAssignment/assets/144416099/2f12ae25-0746-486b-a7da-264c5cf43ee5)
 
+</details>
+
 ##### Inventory 보기
 
+<details>
+  
 메인화면에서 '인벤토리' 버튼을 누르면 인벤토리 창이 보이며, 뒤로가기 버튼이 활성화 된다.
 인벤토리에서는 아이템 수가 9개까지 표시되며, 9개가 넘어가는 경우에는 페이지 형식으로 다음 페이지에 추가되게 구현하였다.
 지금 5페이지까지 인벤토리가 존재하며(총 45개의 아이템을 보유할 수 있음)
@@ -127,8 +137,12 @@ https://assetstore.unity.com/packages/2d/pixelwitchery-239673
 
 ![image](https://github.com/Lawrence1031/UnitySecondAssignment/assets/144416099/ee402468-2bff-4f01-a75e-f1d3d85dcbcc)
 
+</details>
 
 ##### 아이템 장착 팝업
+
+<details>
+  
 
 이는 처음부터 선택요구사항에 맞도록 디자인을 설계하였다.
 아래의 그림과 같이, 선택한 아이템의 이미지, 이름, 설명을 가져오도록 만들었으며,
@@ -137,8 +151,12 @@ https://assetstore.unity.com/packages/2d/pixelwitchery-239673
 
 ![image](https://github.com/Lawrence1031/UnitySecondAssignment/assets/144416099/5e0a8acc-d8ab-4d4b-ad13-df03a0a9d641)
 
+</details>
 
 ##### 추가로 구현하고자 했던 기능들
+
+<details>
+  
 
 강의에서 장착 아이템과 소모성 아이템을 만들었던 것을 공부하고자,
 이 게임에서도 스크립터블 오브젝트를 이용하여 장착 아이템과 소모성 아이템을 구분하여 만들었으며,
@@ -147,6 +165,8 @@ https://assetstore.unity.com/packages/2d/pixelwitchery-239673
 ![image](https://github.com/Lawrence1031/UnitySecondAssignment/assets/144416099/af02b143-a786-41d8-87c0-452a7d9c113c)
 
 아이템을 만드는 과정에서 가격도 만들어서 상점 기능까지 구현하고자 하였다.
+
+</details>
 
 ##### 20231214에 개선하려는 기능들
 
