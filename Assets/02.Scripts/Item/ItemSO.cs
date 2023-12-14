@@ -34,7 +34,6 @@ public class ItemSO : ScriptableObject
     public int price;
 
     [Header("Equipable")]
-    public bool equipable;
     public bool isEquiped;
     public int Atk;
     public int Def;
@@ -52,7 +51,7 @@ public class ItemSO : ScriptableObject
         Debug.Log("아이템 설명 : " + description);
         Debug.Log("아이템 종류 : " + type);
         Debug.Log("아이템 가격 : " + price);
-        Debug.Log("착용 가능여부 : " + equipable);
+        Debug.Log("장착여부 : " + isEquiped);
         Debug.Log("사용 가능여부 : " + consumables);
         Debug.Log("사용 시 획득 HP : " + ConsumableType.HP);
         Debug.Log("사용 시 획득 EXP : " + ConsumableType.Exp);

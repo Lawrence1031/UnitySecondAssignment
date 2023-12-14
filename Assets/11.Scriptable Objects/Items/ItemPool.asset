@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: ItemPool
   m_EditorClassIdentifier: 
   myItems:
-  - {fileID: 11400000, guid: 342500c32e0de97478ec0376002192ec, type: 2}
   - {fileID: 11400000, guid: caf2f8cc0bd9c57438f800e6813f720c, type: 2}
   - {fileID: 11400000, guid: 9bbb950bca3833c419b8512c14c56e75, type: 2}
   - {fileID: 11400000, guid: 61ff9dfdac4aaa440bc479ab1215f93f, type: 2}
