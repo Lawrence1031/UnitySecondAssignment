@@ -887,17 +887,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403c74fa19983e241ac23d3d982461f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: {fileID: 4904031969897430336}
-  ItemDescription: {fileID: 3854982149335668430}
   CheckWindow: {fileID: 0}
   CheckItemName: {fileID: 0}
   CheckItemDescription: {fileID: 0}
   CheckItemImage: {fileID: 0}
   ConfirmText: {fileID: 0}
-  inputData: {fileID: 0}
+  itemslot: {fileID: 0}
   itemButton: {fileID: 0}
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 3379477864962899491}
   Equip: {fileID: 1841025339612124771}
+  YesButton: {fileID: 0}
 --- !u!1 &7689192373044598718
 GameObject:
   m_ObjectHideFlags: 0
